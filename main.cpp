@@ -13,11 +13,22 @@ long factorial(long n) {
     return cache[n];
 }
 
+void dump_cache(long top_arg) {
+
+    for (long a = top_arg; a >= 0; a--) {
+        std::cout << "cached value for  " << a << " is " << cache[a] << std::endl;
+    }
+}
+
 
 int main() {
-    for (long a = 20; a >= 0; a--) {
+    long top_arg = 20;
+    for (long a = top_arg; a >= 0; a--) {
         long f = factorial(a);
         std::cout << "factorial " << a << " is " << factorial(a) << std::endl;
     }
 
+    std::cout << "\nDumped cache:\n" << std::endl;
+
+    dump_cache(top_arg);
 }

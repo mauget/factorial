@@ -29,7 +29,7 @@ int main() {
         std::cout << "input: " << a << std::endl;
 
         long f = factorial(a);
-        std::cout << "\tfactorial " << a << " is " << factorial(a) << std::endl;
+        std::cout << "\tfactorial " << a << " is " << f << std::endl;
     }
 
     std::cout << "\nDumped cache:\n" << std::endl;

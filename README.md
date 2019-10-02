@@ -57,5 +57,5 @@ cached value for  0 is 0
 
 ## Featured
 
-Computes factorials of 20 ... 0. A cache retreives any previous 
-result, short-circuiting a repeat of that previous calculation.
+Computes factorials of 20 ... 0. A cache retrieves any previous result, short-circuiting a repeat of that previous
+ calculation.

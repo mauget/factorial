@@ -3,8 +3,8 @@
 
 std::unordered_map<long, long> cache;
 
-// Use a cache to lookup earlier factorial results
-
+// Recurese from large-to-small recursively.
+// Use a cache to look up previous factorial results
 long factorial(long n) {
     if (n <= 1) return 1;
 

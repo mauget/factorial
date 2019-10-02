@@ -9,6 +9,7 @@ long factorial(long n) {
     if (n <= 1) return 1;
 
     if (cache.count(n) > 0) return cache[n];
+    std::cout << "\t\tcache miss : " << n << std::endl;
     cache[n] = n * factorial(n - 1);
     return cache[n];
 }
@@ -24,8 +25,11 @@ void dump_cache(long top_arg) {
 int main() {
     long top_arg = 20;
     for (long a = top_arg; a >= 0; a--) {
+
+        std::cout << "input: " << a << std::endl;
+
         long f = factorial(a);
-        std::cout << "factorial " << a << " is " << factorial(a) << std::endl;
+        std::cout << "\tfactorial " << a << " is " << factorial(a) << std::endl;
     }
 
     std::cout << "\nDumped cache:\n" << std::endl;
